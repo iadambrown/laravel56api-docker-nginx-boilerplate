@@ -22,7 +22,7 @@ docker-compose --file=docker-compose.prod.yml up -d build
 ```
 
 ##### Xdebug:
-```bash
+```
 Prefs > Languages & Frameworks > PHP > Debug
 Port: 9001
 Can leave "force break with script outside project"
@@ -31,11 +31,11 @@ Run/Debug Dropdown > Edit Configurations
 + PHP Web Page
 Server: Localhost
 Start URL: /
-[...] (server)
+[...] (add server)
 
 Host: localhost
 Port: 8080
 √ Path mappings
-/Code/docker-lamp        /srv/app
+/Code/path-to-project        /srv/app
 Start Listening
 ```
