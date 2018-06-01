@@ -11,10 +11,8 @@ DB_USERNAME=root
 
 ##### Docker:
 ```bash
-docker-compose up -d --build
-docker ps -a
-docker exec -it <container_id> bash
-php /srv/app/artisan migrate
+docker-compose up -d --build && docker-compose exec app php artisan migrate --seed
+docker exec -it app bash
 ```
 (production)
 ```bash
